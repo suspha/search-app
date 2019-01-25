@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "sirloin": "^0.9.0"
+  },
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}

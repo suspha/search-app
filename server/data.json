@@ -1,0 +1,97 @@
+[
+  {
+    "id": "0001",
+    "type": "articles",
+    "title": "healthy receipes",
+    "text": "lorum",
+    "tags": [ "food", "health" ],
+    "dateCreated": "01.02.2017",
+    "image":
+      {
+        "url": "images/0001.jpg"
+      },
+    "thumbnail":
+      {
+        "url": "images/thumbnails/0001.jpg"
+      }
+  },
+  {
+    "id": "0002",
+    "type": "news",
+    "title": "Dette er nyheter",
+    "text": "lalalalla lallalal",
+    "tags": "forskning",
+    "dateCreated": "21.04.2000",
+    "image":
+      {
+        "url": "images/0001.jpg"
+      },
+    "thumbnail":
+      {
+        "url": "images/thumbnails/0001.jpg"
+      }
+  },
+  {
+    "id": "0003",
+    "type": "pdf",
+    "title": "Statistic",
+    "text": "pdf",
+    "dateCreated": "03.07.2018",
+    "image":
+      {
+        "url": "images/0001.jpg"
+      },
+    "thumbnail":
+      {
+        "url": "images/thumbnails/0003.jpg"
+      }
+  },
+  {
+    "id": "0004",
+    "type": "news",
+    "title": "Bad place to stay",
+    "text": "As one of Europe’s cheapest and hippest cities, Berlin has plenty of unconventional attractions like museums in bunkers, airport runways repurposed as parks, and people jumping off hotels. Check out these seven on your next visit.",
+    "tags": ["travel", "live"],
+    "dateCreated": "11.04.2002",
+    "image":
+    {
+      "url": "images/0003.jpg"
+    },
+  "thumbnail":
+    {
+      "url": "images/thumbnails/0003.jpg"
+    }
+  },
+  {
+    "id": "0005",
+    "type": "news",
+    "title": "Best place to stay",
+    "text": "As one of Europe’s cheapest and hippest cities, Berlin has plenty of unconventional attractions like museums in bunkers, airport runways repurposed as parks, and people jumping off hotels. Check out these seven on your next visit.",
+    "tags": ["travel", "live"],
+    "dateCreated": "11.04.2002",
+    "image":
+    {
+      "url": "images/0003.jpg"
+    },
+  "thumbnail":
+    {
+      "url": "images/thumbnails/0003.jpg"
+    }
+  },
+  {
+    "id": "0006",
+    "type": "articles",
+    "title": "Best place to stay",
+    "text": "As one of Europe’s cheapest and hippest cities, Berlin has plenty of unconventional attractions like museums in bunkers, airport runways repurposed as parks, and people jumping off hotels. Check out these seven on your next visit.",
+    "tags": ["travel", "live"],
+    "dateCreated": "11.04.2002",
+    "image":
+    {
+      "url": "images/0003.jpg"
+    },
+  "thumbnail":
+    {
+      "url": "images/thumbnails/0003.jpg"
+    }
+  }
+]
