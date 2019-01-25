@@ -7,6 +7,6 @@ console.log(data)
 app.get('/search', async (req, res) => {
   const search = req.query.search
   console.log("searching for", search)
-  const result = data.filter(x => x.name[0] === search)
+  const result = data.filter(x => x.title === search)
   return result
 })
