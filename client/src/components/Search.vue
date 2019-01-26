@@ -1,4 +1,3 @@
- -0,0 +1,44 @@
 <template>
   <div class="search">
     <h1>Search</h1>
@@ -6,15 +5,22 @@
       <input v-model="search" type="text" @keyup="handleSearch">
       <button>Submit</button>
     </form>
-    <button @click="handleReset">Reset</button>
-    <p>{{ search }}</p>
-    <p v-if="result">{{ result }}</p>
-    <p v-else>Venter på data</p>
-    <ul v-if="result">
-      <li v-for="r in result" :key="r.id">
-        {{r.id}}: {{r.title}}
+    <div class="tags" v-if="tags">
+      <button
+        v-for="(tag, i) in tags"
+        :key="i"
+        :class="{ 'active': tagged.includes(tag) }"
+        @click="selectTag(tag)"
+      >
+        {{ tag }}
+      </button>
+    </div>
+    <ul v-if="articles">
+      <li v-for="a in articles" :key="a.id">
+        {{ a.id }}: {{ a.title }}
       </li>
     </ul>
+    <p v-else>Venter på søk</p>
   </div>
 </template>
 
@@ -22,23 +28,56 @@
 export default {
   name: 'search',
   methods: {
-    async handleSearch() {
-      console.log(this.search)
-      await this.$store.dispatch('doSearch', this.search)
+    handleSearch() {
+      if(this.search.length > 1 ) {
+        console.log(this.search)
+        this.$store.dispatch('doSearch', this)
+      } else {
+        this.handleReset()
+      }
     },
     handleReset() {
-      this.$store.commit('setResult', null)
+      this.$store.commit('setArticles', null)
+    },
+    selectTag(tag) {
+      console.log("tag", tag)
+      if(this.tagged.includes(tag)){
+        this.tagged = this.tagged.filter(tagInArray => tagInArray !== tag)
+      } else {
+         this.tagged.push(tag)
+      }
+      this.handleSearch()
     }
+  },
+  created() {
+    this.$store.dispatch('loadTags')
+    console.log('created')
   },
   data() {
     return {
       search: '',
+      tagged: []
     }
   },
   computed:{
-    result() {
-      return this.$store.state.result
+    articles() {
+      return this.$store.state.articles
+    },
+    tags() {
+      return this.$store.state.tags
     }
   }
 }
 </script>
+
+<style scoped lang="scss">
+.tags{
+  button {
+    &.active {
+      color: #fff;
+      background-color: green;
+    }
+  }
+}
+
+</style>

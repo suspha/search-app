@@ -4,24 +4,36 @@ import axios from 'axios'
 
 Vue.use(Vuex)
 
+const URL = 'http://localhost:4000'
+
 const state = {
-  result: null
+  articles: null,
+  tags: null
 }
 
 //commmit, state
 const mutations = {
-  setResult(state, data) {
-    state.result = data
+  setArticles(state, data) {
+    state.articles = data
+  },
+  setTags(state, data) {
+    state.tags = data
   }
 }
 
 //dispatch, store
 const actions = {
-  async doSearch(store, search) {
-    const result = await axios.get('http://localhost:4000/search', {
-      params: { search }
+  async doSearch({ commit }, { search, tagged }) {
+    console.log(tagged)
+    const result = await axios.get(URL + '/search', {
+      params: { search, tagged: tagged.join(',') }
     })
-    store.commit('setResult', result.data)
+    commit('setArticles', result.data)
+  },
+  async loadTags({ commit }) {
+    const result = await axios.get(`${URL}/tags`)
+    commit('setTags', result.data)
+    console.log(result.data)
   }
 }
 
