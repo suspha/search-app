@@ -13,7 +13,8 @@ app.get('/search', async (req, res) => {
     return (
       (
         article.title.toLowerCase().includes(search) ||
-        article.text.toLowerCase().includes(search)
+        article.text.toLowerCase().includes(search) ||
+        article.type.toLowerCase().includes(search)
       )
       &&
       !!article.tags.find(tag => !tagged[0] || tagged.includes(tag))

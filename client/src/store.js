@@ -37,4 +37,14 @@ const actions = {
   }
 }
 
-export default new Vuex.Store({ state, mutations, actions })
+// getters map articles leser ut året
+const getters = {
+  years: state => {
+    return (state.articles || []).map(a => {
+      return new Date(a.dateCreated.split('.').reverse().join('-')).getFullYear()
+    })
+  }
+}
+
+
+export default new Vuex.Store({ state, mutations, actions, getters })

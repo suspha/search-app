@@ -1,98 +1,158 @@
 [
   {
     "id": "0001",
-    "type": "articles",
-    "title": "healthy receipes",
-    "text": "lorum",
-    "tags": [ "food", "health" ],
+    "type": "bok",
+    "title": "Bedre uten brød",
+    "text": "Bli frisk med lavkarbo - kostholdet som leger vår tids sykdommer",
+    "tags": [ "mat", "helse", "fakta" ],
     "dateCreated": "01.02.2017",
+    "author": "Gunnar Roalkvam",
     "image":
       {
         "url": "images/0001.jpg"
-      },
-    "thumbnail":
-      {
-        "url": "images/thumbnails/0001.jpg"
       }
-  },
-  {
-    "id": "0002",
-    "type": "news",
-    "title": "Dette er nyheter",
-    "text": "lalalalla lallalal",
-    "tags": ["forskning"],
-    "dateCreated": "21.04.2000",
+    },
+    {
+    "id": "9249",
+    "type": "bok",
+    "title": "Sterk og svak",
+    "text": "Håndboken om spiseforstyrrelser",
+    "tags": [ "mat", "helse", "familie" ],
+    "dateCreated": "01.12.2007",
+    "author": "Finn skåderud",
     "image":
       {
         "url": "images/0001.jpg"
-      },
-    "thumbnail":
-      {
-        "url": "images/thumbnails/0001.jpg"
       }
+    },
+  {
+    "id": "2342",
+    "type": "bok",
+    "title": "Vinterkrigen",
+    "text": "Ingrid Winters hverdag er som vanlig preget av utfordringer. På jobben skal de flytte inn i åpent kontorlandskap med clean desk-policy og nye, synergiskapende samarbeidsformer, stikk i strid med Ingrids drømmer om professortittel og sabbatsår.",
+    "tags": ["krim", "roman"],
+    "dateCreated": "21.04.2018",
+    "author": "Olav Hauge",
+    "image":
+      {
+        "url": "images/0001.jpg"
+    }
   },
   {
-    "id": "0003",
-    "type": "pdf",
-    "title": "Statistic",
-    "text": "pdf",
-    "tags": [],
+    "id": "5603",
+    "type": "novelle",
+    "title": "Munker",
+    "text": "Her møter vi att hovudpersonane frå Sveve over vatna frå 1982. Det er Munk, Waglen og Forteljaren som møtest etter 15 år. Waglen er blitt videohandlar i Sogn med kannibalfilmar som spesialitet, Fortel",
+    "tags": ["roman", "krig"],
     "dateCreated": "03.07.2018",
+    "author": "Lisa Lundqvist",
     "image":
       {
         "url": "images/0001.jpg"
-      },
-    "thumbnail":
-      {
-        "url": "images/thumbnails/0003.jpg"
-      }
-  },
-  {
-    "id": "0004",
-    "type": "news",
-    "title": "Bad place to stay",
-    "text": "As one of Europe’s cheapest and hippest cities, Berlin has plenty of unconventional attractions like museums in bunkers, airport runways repurposed as parks, and people jumping off hotels. Check out these seven on your next visit.",
-    "tags": ["travel", "live"],
-    "dateCreated": "11.04.2002",
-    "image":
-    {
-      "url": "images/0003.jpg"
-    },
-  "thumbnail":
-    {
-      "url": "images/thumbnails/0003.jpg"
     }
   },
   {
-    "id": "0005",
-    "type": "news",
-    "title": "Best place to stay",
-    "text": "As one of Europe’s cheapest and hippest cities, Berlin has plenty of unconventional attractions like museums in bunkers, airport runways repurposed as parks, and people jumping off hotels. Check out these seven on your next visit.",
-    "tags": ["travel", "live"],
-    "dateCreated": "11.04.2002",
-    "image":
+  "id": "0121",
+  "type": "bok",
+  "title": "God nok",
+  "text": "Målet er at du skal få de verktøyene du behøver for en god og varig livsstilsendring, og at du på veien også skal lære deg det som kanskje er det aller viktigste",
+  "tags": [ "mat", "helse", "kosthold", "trening"],
+  "dateCreated": "11.12.2015",
+  "author": "Camilla Lorentzen",
+  "image":
     {
-      "url": "images/0003.jpg"
-    },
-  "thumbnail":
-    {
-      "url": "images/thumbnails/0003.jpg"
+      "url": "images/0001.jpg"
     }
   },
   {
-    "id": "0006",
-    "type": "articles",
-    "title": "Best place to stay",
+    "id": "4404",
+    "type": "bok",
+    "title": "My journal",
     "text": "As one of Europe’s cheapest and hippest cities, Berlin has plenty of unconventional attractions like museums in bunkers, airport runways repurposed as parks, and people jumping off hotels. Check out these seven on your next visit.",
-    "tags": ["politics"],
-    "dateCreated": "11.04.2002",
+    "tags": ["reise", "kultur"],
+    "dateCreated": "11.10.1998",
+    "author": "Jørgen Brkke",
     "image":
     {
       "url": "images/0003.jpg"
-    },
-  "thumbnail":
+    }
+  },
+  {
+    "id": "3405",
+    "type": "lyrikk",
+    "title": "Best place to stay",
+    "text": "As one of Europe’s cheapest and hippest cities, Berlin has plenty of unconventional attractions like museums in bunkers, airport runways repurposed as parks, and people jumping off hotels. Check out these seven on your next visit.",
+    "tags": ["fantasi", "scifi"],
+    "dateCreated": "22.03.1999",
+    "author": "Lina-Marie Ulvestad",
+    "image":
     {
-      "url": "images/thumbnails/0003.jpg"
+      "url": "images/0003.jpg"
+    }
+  },
+  {
+    "id": "4006",
+    "type": "dikt",
+    "title": "Kafebordet",
+    "text": "Ein ny diktantologi med dikt for folk som likar seg på kafé. Boka har eit format som gjer at ho passar ved kafébordet. Varme dikt med påfyll",
+    "tags": ["politikk", "historie"],
+    "dateCreated": "15.09.2011",
+    "author": "Nina Furu",
+    "image":
+    {
+      "url": "images/0003.jpg"
+    }
+  },
+  {
+    "id": "0007",
+    "type": "kronikk",
+    "title": "Hippie",
+    "text": "Året er 1970, og Paulo er en ung, langhåret brasilianer som ønsker å bli forfatter. Han legger ut på en reise på jakt etter en dypere mening med livet",
+    "tags": ["humor", "litteratur"],
+    "dateCreated": "18.08.2001",
+    "author": "Douglas Adams",
+    "image":
+    {
+      "url": "images/0003.jpg"
+    }
+  },
+  {
+    "id": "0208",
+    "type": "Novelle",
+    "title": "Roar",
+    "text": "I am woman. Hear me roar. Have you ever imagined a different life? Have you ever stood at a crossroads, undecided? Have you ever had a moment when you wanted to roar?",
+    "tags": ["roman", "krig"],
+    "dateCreated": "05.04.2003",
+    "author": "Janne S. Drangsholts",
+    "image":
+    {
+      "url": "images/0003.jpg"
+    }
+  },
+  {
+    "id": "0109",
+    "type": "bok",
+    "title": "Verdenshavet",
+    "text": "Verden er gått av hengslene: Gudene er på jakt etter et nytt sted å bo. Med mektige fiender bak hver busk - og under isen ",
+    "tags": ["fantasi", "natur"],
+    "dateCreated": "12.12.2000",
+    "author": "Cornelius Jakhelln",
+    "image":
+    {
+      "url": "images/0004.jpg"
+    }
+  },
+  {
+    "id": "1234",
+    "type": "bok",
+    "title": "Drapet",
+    "text": "Mord, mysterier og mørke gjerninger! Tidenes krim inneholder noen av de beste, mest skremmende og intrikate krimhistoriene som er skrevet.",
+    "tags": ["krim", "thriller"],
+    "dateCreated": "01.02.2012",
+    "author": "Bobby Hall",
+    "image":
+    {
+      "url": "images/0005.jpg"
     }
   }
 ]
