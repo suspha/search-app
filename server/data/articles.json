@@ -139,7 +139,7 @@
     "author": "Cornelius Jakhelln",
     "image":
     {
-      "url": "images/0004.jpg"
+      "url": "images/003455.jpg"
     }
   },
   {
@@ -152,7 +152,21 @@
     "author": "Bobby Hall",
     "image":
     {
-      "url": "images/0005.jpg"
+      "url": "images/02335.jpg"
     }
+  },
+  {
+    "id": "19034",
+    "type": "bok",
+    "title": "Drapet",
+    "text": "Mord, mysterier og mørke gjerninger! Tidenes krim inneholder noen av de beste, mest skremmende og intrikate krimhistoriene som er skrevet.",
+    "tags": ["krim", "fantasi"],
+    "dateCreated": "20.03.2012",
+    "author": "Jenny Petters",
+    "image":
+    {
+      "url": "images/0012.jpg"
+    }
+
   }
 ]

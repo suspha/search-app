@@ -18,3 +18,11 @@ TAGS
 [ ] Lagre hvilken man klikker på i ekstra array
 [ ] sende array til doSearch
 [ ] server filtre basert på de taggene man valgte
+
+YEARS
+[ ] Remove dublicate, HOW???
+[ ] Move from getters to state??
+
+SHOW COUNT
+[ ] Count how many for each tags search result
+[ ] Count how many for each years search result

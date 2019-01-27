@@ -14,19 +14,27 @@
         :class="{ 'active': tagged.includes(tag) }"
         @click="selectTag(tag)">
         {{ tag }}
+        ({{ tag.length }})
       </button>
     </div>
-    <div class="years">
+    <div class="years" v-if="years.length > 0">
       <h2>Årstall</h2>
-      {{ years }}
+      <button
+        v-for="y in years"
+        :key="y.id"
+        :class="{ 'active': yeared.includes(y) }"
+        @click="selectYear(y)">
+        {{ y }}
+        ({{ years.length }})
+      </button>
     </div>
     <div class="article-list">
       <ul v-if="articles">
         <li v-for="a in articles" :key="a.id">
-          <p>TITTEL: {{ a.title }},</p>
-          <p>{{a.text}}</p>
+          <h4>{{ a.title }}</h4>
+          <p>{{ a.text }}</p>
           <span>REF: {{ a.id }},</span>
-          <span> {{a.author}}</span>
+          <span>{{ a.author }}</span>
         </li>
       </ul>
     </diV>
@@ -48,14 +56,26 @@ export default {
     },
     handleReset() {
       this.$store.commit('setArticles', null)
+      this.yeared = []
     },
     selectTag(tag) {
       console.log("tag", tag)
-      if(this.tagged.includes(tag)){
+      if(this.tagged.includes(tag)) {
         this.tagged = this.tagged.filter(tagInArray => tagInArray !== tag)
       } else {
          this.tagged.push(tag)
       }
+      this.handleSearch()
+    },
+    selectYear(y) {
+      console.log("year", y)
+      if(this.yeared.includes(y)) {
+        this.yeared = this.yeared.filter(yr => yr !== y)
+      } else {
+        this.yeared.push(y)
+      }
+
+      console.log(this.yeared)
       this.handleSearch()
     }
   },
@@ -67,6 +87,7 @@ export default {
     return {
       search: '',
       tagged: [],
+      yeared: [],
     }
   },
   computed:{
@@ -78,7 +99,13 @@ export default {
     },
     years() {
       return this.$store.getters.years // years er baser på article, getters
-    }
+    },
+    // yearCount() {
+    //   return this.$store.getters.counts // count total
+    // },
+    // tagCount () {
+    //   return this.tagged(tag).length
+    // }
   }
 }
 </script>
@@ -108,12 +135,18 @@ export default {
    position: relative;
    font-size: 16px;
   }
-  // .article-list {
-  //   li > p:nth-child(2){
-  //     text-transform:capitalize;
-  //   }
-  // }
-  .tags{
+ .article-list {
+   li {
+     border-bottom: 2px solid #f1f1f1;
+     padding: 1rem 0;
+     list-style: none;
+   }
+ }
+
+
+  .tags, .years{
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #333;
     button {
       margin-right: 10px;
       padding: 4px 8px;
